@@ -25,10 +25,10 @@ struct Args {
 struct Config {
     #[serde(default = "default_replace_spaces")]
     replace_spaces: bool,
-    
+ 
     #[serde(default)]
     behaviors: Vec<Behavior>,
-    
+
     #[serde(default)]
     detection: DetectionRules,
 }
@@ -53,7 +53,7 @@ enum NamingStyle {
 struct DetectionRules {
     #[serde(default = "default_exe_extensions")]
     exe_extensions: Vec<String>,
-    
+
     #[serde(default = "default_package_dirs")]
     package_dirs: Vec<String>,
 }
